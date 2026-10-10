@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f3ed">
+  <meta name="description" content="Discover thoughtfully selected fashion, footwear and everyday favorites at The Edit.">
+  <title>The Edit — Wear your own story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A little something for your next look <span>—</span> free shipping over ₹2,000</div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="The Edit home">the<span>edit</span><i>.</i></a>
+    <nav aria-label="Main navigation">
+      <a class="active" href="#shop">Shop</a><a href="#story">Our story</a><a href="contact.html">Contact</a><a href="login.html">Sign in</a>
+    </nav>
+    <a class="bag-link" href="#cart" aria-label="Shopping bag">Bag <span id="bag-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="story">
+      <img class="hero-image" src="banner 1.jpg" alt="A curated fashion collection for a new season">
+      <div class="hero-shade"></div>
+      <div class="hero-copy"><p class="eyebrow">THE NEW SEASON EDIT · 2025</p><h1>Wear your<br><em>own story.</em></h1><p>Pieces that feel like you. Made for wherever the day takes you.</p><a class="button button-light" href="#shop">Explore the collection <span>↘</span></a></div>
+      <div class="hero-note">01 / STYLE, YOUR WAY</div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">A GOOD PLACE TO START</p><h2>Find your <em>feeling.</em></h2></div><p class="section-note">Considered pieces, easy to love.<br>Discover your next favorite.</p></div>
+      <div class="shop-tools"><div class="filters" role="group" aria-label="Filter products">
+        <button class="filter active" data-category="all">Everything</button><button class="filter" data-category="clothing">Clothing</button><button class="filter" data-category="shoes">Shoes</button><button class="filter" data-category="sandals">Sandals</button>
+      </div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find something..." aria-label="Search products"></label></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="empty-results" id="empty-results" hidden>Nothing here just yet. Try another search.</p>
+    </section>
+
+    <section class="note-band"><span>✳</span><p>Good style is personal.<br><em>That’s the whole point.</em></p><span>✳</span></section>
+
+    <section class="cart-section" id="cart">
+      <div class="cart-title"><div><p class="eyebrow">SAVED FOR LATER? NO.</p><h2>Your bag<span>.</span></h2></div><span class="cart-counter" id="cart-caption">0 pieces</span></div>
+      <div class="cart-layout"><div id="cart-items" class="cart-items"><p class="cart-empty">Your bag is taking a little breather.<br>Go find something you love.</p></div><aside class="order-summary"><p class="eyebrow">THE TOTAL</p><div class="total-row"><span>Subtotal</span><strong>₹<span id="cart-total">0</span></strong></div><p class="shipping-note">Shipping is on us over ₹2,000.</p><button id="checkout-btn" class="button button-dark">Continue to checkout <span>↗</span></button><p class="checkout-note">Thoughtful picks. Easy checkout.</p></aside></div>
+    </section>
+  </main>
+  <footer><a class="wordmark footer-mark" href="index.html">the<span>edit</span><i>.</i></a><p>Dress like you mean it.</p><span>© 2025 The Edit Studio</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

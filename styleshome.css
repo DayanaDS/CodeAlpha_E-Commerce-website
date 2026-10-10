@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4 ;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #bb1c44;
+  color: white;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin: 0 15px;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+  color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #bb1c44;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero .cta-btn {
+  background-color: #ff6347;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero .cta-btn:hover {
+  background-color: #e53e33;
+}
+
+/* Categories Section */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.category-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.category-item {
+  background-color: white;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.category-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.category-item p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.category-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #bb1c44;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .category-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero .cta-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
